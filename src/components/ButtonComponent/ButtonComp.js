@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function ButtonComp({text}) {
-  return (
-    <button>{text}</button>
-  )
+function ButtonComp({ text }) {
+  return <button>{text}</button>;
 }
 
-export default ButtonComp
+export default ButtonComp;

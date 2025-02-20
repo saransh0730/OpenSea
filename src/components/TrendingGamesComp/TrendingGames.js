@@ -45,10 +45,10 @@ const categoryData = [
 function TrendingGames() {
   return (
     <div className="trending-games-container">
-    <div className="headings">
-      <h2>Trending in Gaming</h2>
-    <ButtonComp text="View Category" />
-    </div>
+      <div className="headings">
+        <h2>Trending in Gaming</h2>
+        <ButtonComp text="View Category" />
+      </div>
       <div className="category-list">
         {categoryData.map((category, index) => (
           <Category

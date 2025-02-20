@@ -3,7 +3,7 @@ import "./TrendingMemberships.css";
 import Category from "../categories/Container";
 import ButtonComp from "../ButtonComponent/ButtonComp";
 
-const categoryData = [                                      
+const categoryData = [
   {
     image: "./images/memberships/m1.avif",
     name: "SuperFrens",
@@ -45,10 +45,10 @@ const categoryData = [
 function TrendingMemberships() {
   return (
     <div className="trending-games-container">
-    <div className="headings">
-      <h2>Trending in Memberships</h2>
-    <ButtonComp text="View Category" />
-    </div>
+      <div className="headings">
+        <h2>Trending in Memberships</h2>
+        <ButtonComp text="View Category" />
+      </div>
       <div className="category-list">
         {categoryData.map((category, index) => (
           <Category

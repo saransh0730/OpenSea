@@ -3,7 +3,7 @@ import "./PhotoComponent.css";
 import Category from "../categories/Container";
 import ButtonComp from "../ButtonComponent/ButtonComp";
 
-const categoryData = [                                      
+const categoryData = [
   {
     image: "./images/photography/photo1.avif",
     name: "DRIP DROP BY DAVE K..",
@@ -45,10 +45,10 @@ const categoryData = [
 function PhotoComponent() {
   return (
     <div className="trending-photo-container">
-    <div className="headings">
-      <h2>Trending in Photography</h2>
-    <ButtonComp text="View Category" />
-    </div>
+      <div className="headings">
+        <h2>Trending in Photography</h2>
+        <ButtonComp text="View Category" />
+      </div>
       <div className="category-list">
         {categoryData.map((category, index) => (
           <Category

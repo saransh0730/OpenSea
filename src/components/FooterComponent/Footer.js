@@ -1,71 +1,12 @@
-// import React from "react";
-// import "./FooterComp.css";
-// import { FaTwitter } from "react-icons/fa";
-// import { FaInstagram } from "react-icons/fa";
-// import { BsDiscord } from "react-icons/bs";
-// import { FaRedditAlien } from "react-icons/fa";
-// import { FaYoutube } from "react-icons/fa";
-// import { FaTiktok } from "react-icons/fa6";
-// import { FiMail } from "react-icons/fi";
-
-// function Footer() {
-//   return (
-//     <footer>
-//       <div className="footer-container">
-//         <div className="upper-footer">
-//           <div className="upper-footer-content">
-//             <h3>Stay in the loop</h3>
-//             <p>
-//               Join our mailing list to stay in the loop with our newest feature
-//               releases, NFT drops, and tips and tricks for navigating OpenSea.
-//             </p>
-//             <div className="footer-input">
-//               <input type="text" placeholder="Your email address" />
-//               <button>Sign up</button>
-//             </div>
-//           </div>
-//           <div className="upper-footer-content">
-//             <h3>Join the community</h3>
-//             <div className="footer-input">
-//               <div className="social-icon">
-//                 <FaTwitter size={24}/>
-//               </div>
-//               <div className="social-icon">
-//               <FaInstagram size={24}/>
-//               </div>
-//               <div className="social-icon">
-//                 <BsDiscord size={24}/>
-//               </div>
-//               <div className="social-icon">
-//                 <FaRedditAlien size={24}/>
-//               </div>
-//               <div className="social-icon">
-//                 <FaYoutube size={24}/>
-//               </div>
-//               <div className="social-icon">
-//                 <FaTiktok size={24}/>
-//               </div>
-//               <div className="social-icon">
-//                 <FiMail size={24}/>
-//               </div>
-//             </div>
-//           </div>
-//           <div className="upper-footer-content">
-//             <h3>Need help?</h3>
-//             <button>Contact Support</button>         
-//             </div>
-//         </div>
-//         <div className="bottom-footer"></div>
-//       </div>
-//     </footer>
-//   );
-// }
-
-// export default Footer;
-
 import React from "react";
 import "./FooterComp.css";
-import { FaTwitter, FaInstagram, FaRedditAlien, FaYoutube, FaTiktok } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaInstagram,
+  FaRedditAlien,
+  FaYoutube,
+  FaTiktok,
+} from "react-icons/fa";
 import { BsDiscord } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 
@@ -88,29 +29,44 @@ function Footer() {
           <div className="upper-footer-content">
             <h3>Join the community</h3>
             <div className="footer-input">
-              <div className="social-icon"><FaTwitter size={24} /></div>
-              <div className="social-icon"><FaInstagram size={24} /></div>
-              <div className="social-icon"><BsDiscord size={24} /></div>
-              <div className="social-icon"><FaRedditAlien size={24} /></div>
-              <div className="social-icon"><FaYoutube size={24} /></div>
-              <div className="social-icon"><FaTiktok size={24} /></div>
-              <div className="social-icon"><FiMail size={24} /></div>
+              <div className="social-icon">
+                <FaTwitter size={24} />
+              </div>
+              <div className="social-icon">
+                <FaInstagram size={24} />
+              </div>
+              <div className="social-icon">
+                <BsDiscord size={24} />
+              </div>
+              <div className="social-icon">
+                <FaRedditAlien size={24} />
+              </div>
+              <div className="social-icon">
+                <FaYoutube size={24} />
+              </div>
+              <div className="social-icon">
+                <FaTiktok size={24} />
+              </div>
+              <div className="social-icon">
+                <FiMail size={24} />
+              </div>
             </div>
           </div>
           <div className="upper-footer-content">
             <h3>Need help?</h3>
-            <button>Contact Support</button>         
+            <button>Contact Support</button>
           </div>
         </div>
-        <hr/>
-        
+        <hr />
+
         <div className="bottom-footer">
           <div className="footer-description">
-          <img src="../images/footerImage.svg"/>
+            <img src="../images/footerImage.svg" />
             <h3>OpenSea</h3>
             <p>
-              The world’s first and largest digital marketplace for crypto collectibles
-              and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.
+              The world’s first and largest digital marketplace for crypto
+              collectibles and non-fungible tokens (NFTs). Buy, sell, and
+              discover exclusive digital items.
             </p>
           </div>
           <div className="footer-links">
@@ -139,7 +95,6 @@ function Footer() {
               <ul>
                 <li>Rankings</li>
                 <li>Activity</li>
-                
               </ul>
             </div>
             <div className="footer-column">
@@ -178,17 +133,17 @@ function Footer() {
               </ul>
             </div>
           </div>
-        <hr />
+          <hr />
         </div>
       </div>
       <div className="company-tnc">
-          <div>
-            <p>© 2018 - 2025 Ozone Networks, Inc</p>
-          </div>
-          <div className="policy-terms">
-            <a>Privacy Policy</a>
-            <a>Terms of Service</a>
-          </div>
+        <div>
+          <p>© 2018 - 2025 Ozone Networks, Inc</p>
+        </div>
+        <div className="policy-terms">
+          <a>Privacy Policy</a>
+          <a>Terms of Service</a>
+        </div>
       </div>
     </footer>
   );

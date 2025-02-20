@@ -1,318 +1,325 @@
 header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: rgb(18, 18, 18);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgb(18, 18, 18);
 }
 .company-details {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    --transition-curve: cubic-bezier(0.05,0,0.2,1);
-    transition: background-color 0.2s var(--transition-curve), box-shadow 0.2s var(--transition-curve), color 0.2s var(--transition-curve), transform 0.4s var(--transition-curve);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    max-width: 100vw;
-    height: 72px;
-    top: 0px;
-    position: sticky;
-    z-index: 150;
-    background-color: rgb(18, 18, 18);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  --transition-curve: cubic-bezier(0.05, 0, 0.2, 1);
+  transition: background-color 0.2s var(--transition-curve),
+    box-shadow 0.2s var(--transition-curve), color 0.2s var(--transition-curve),
+    transform 0.4s var(--transition-curve);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  max-width: 100vw;
+  height: 72px;
+  top: 0px;
+  position: sticky;
+  z-index: 150;
+  background-color: rgb(18, 18, 18);
 }
 
 .searchbar {
-    position: relative;
-    width: 400px;
+  position: relative;
+  width: 400px;
 }
 
 .searchbar input {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    border-radius: 15px;
-    font-size: medium;
-    border: 1px solid #ccc;
-    outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-indent: 30px;
-    color: white;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-size: medium;
+  border: 1px solid #ccc;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-indent: 30px;
+  color: white;
 }
 
 .search-icon {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #aaa;
-    font-size: 20px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 20px;
 }
 
-
-.interactive-options button, .interactive-options a {
-    color: white;
-    font-size: large;
-    outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.8rem;
-    border-radius: 12px;
-    border: none;
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.04);
+.interactive-options button,
+.interactive-options a {
+  color: white;
+  font-size: large;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
-.interactive-options button:hover , .interactive-options a:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.105);
+.interactive-options button:hover,
+.interactive-options a:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.105);
 }
 
 .interactive-options {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
 }
 
 .logo h2 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .company-details ul li {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .company-details ul li img {
-    width: 45px;
-    height: 45px;
+  width: 45px;
+  height: 45px;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .searchbar input {
-    outline: none;
-    line-height: 26px;
-    padding: 8px;
-    border-color: transparent;
-    background-color: rgba(255, 255, 255, 0.04);
+  outline: none;
+  line-height: 26px;
+  padding: 8px;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
 .searchbar input:hover {
-    background-color: rgba(255, 255, 255, 0.105);
+  background-color: rgba(255, 255, 255, 0.105);
 }
 
 .company-details ul li:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .company-details ul {
-    gap: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type : none;
+  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
 }
 
 .dropdown {
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: rgb(34, 34, 34);
-    border-radius: 10px;
-    padding: 10px 10px;
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgb(34, 34, 34);
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .dropdown:hover .dropdown-menu {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .dropdown-menu a {
-    text-align: left;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    display: block;
-    font-weight: bold;
+  text-align: left;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
 }
 
 .dropdown-menu a:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 
 .profile-dropdown {
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .profile-menu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 100%;
-    right: 0;
-    background: rgb(34, 34, 34);
-    border-radius: 10px;
-    padding: 10px 10px;
-    width: 17vw;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-    z-index: 200;
-    height: 70vh;
-    overflow-y: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  right: 0;
+  background: rgb(34, 34, 34);
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 17vw;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 200;
+  height: 70vh;
+  overflow-y: auto;
 }
 
 .profile-menu a {
-    justify-content: start;
-    background: rgb(34, 34, 34);
-    color: white;
-    padding: 12px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-weight: bold;
-    background-color: none !important;
+  justify-content: start;
+  background: rgb(34, 34, 34);
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  background-color: none !important;
 }
 
 .profile-menu a:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
 }
 
 .profile-menu hr {
-    border: none;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 8px 0;
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 8px 0;
 }
 
-.phone-menu button, .phone-menu a {
-    color: white;
-    font-size: large;
-    outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.8rem;
-    border-radius: 12px;
-    border: none;
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.04);
+.phone-menu button,
+.phone-menu a {
+  color: white;
+  font-size: large;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
-.phone-menu button:hover , .phone-menu a:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.105);
-}
-
-.phone-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem;
-    gap: 1rem;
+.phone-menu button:hover,
+.phone-menu a:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.105);
 }
 
 .phone-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 0.5rem;
-    display: none;
-    padding: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+.phone-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+  display: none;
+  padding: 0 0.5rem;
 }
 
 .sidebar {
-    position: absolute;
-    top: 10vh;
-    width: 100%;
-    background: rgba(37, 37, 37, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 9999;
-    transition: right 0.2s ease-in;
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+  background: rgba(37, 37, 37, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  transition: right 0.2s ease-in;
 }
 
 .open {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
 
 .close {
-    position: absolute;
-    right: -500px;
+  position: absolute;
+  right: -500px;
 }
 
 .options {
-    padding: 12px 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .sidebar a {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    padding: 15px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  padding: 15px 20px;
 }
 
 @media (max-width: 767px) {
-    .phone-menu {
-        gap: 0.5rem;
-        display: flex;
-        justify-content: space-between;
-        width: auto;
-    }
-    .interactive-options, .searchbar, .dropdown {
-        display: none;
-    }
-    .company-details {
-        justify-content: space-around;
-        height: auto;
-    }
-    .company-details ul {
-        padding: 0rem 0.5rem;
-    }
-    .company-details ul li img {
-        width: 35px;
-        height: 35px;
-    }
-    .logo h2 {
-        font-size: 22px;
-    }
+  .phone-menu {
+    gap: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+  .interactive-options,
+  .searchbar,
+  .dropdown {
+    display: none;
+  }
+  .company-details {
+    justify-content: space-around;
+    height: auto;
+  }
+  .company-details ul {
+    padding: 0rem 0.5rem;
+  }
+  .company-details ul li img {
+    width: 35px;
+    height: 35px;
+  }
+  .logo h2 {
+    font-size: 22px;
+  }
 }

@@ -44,15 +44,14 @@ function NavbarComp() {
     setisMenuOpen(!isMenuOpen);
   };
 
-
   const connectWallet = async (e) => {
-    e.preventDefault(); 
-    
+    e.preventDefault();
+
     try {
       if (window.ethereum) {
         const accounts = await window.ethereum.request({
-          method: 'eth_requestAccounts'
-        }); 
+          method: "eth_requestAccounts",
+        });
         console.log(accounts);
       } else {
         console.log("Please install MetaMask or another Web3 wallet");
@@ -117,8 +116,8 @@ function NavbarComp() {
                       <FaRegUser size={21} /> Profile
                     </a>
                     <a href="#" onClick={connectWallet}>
-                      <FaBitcoin size={21} /> 
-                     Connect Wallet
+                      <FaBitcoin size={21} />
+                      Connect Wallet
                     </a>
                     <a href="#">
                       <IoEyeOutline size={22} /> Watchlist
@@ -191,6 +190,13 @@ function NavbarComp() {
                   <div className="options">
                     <IoStatsChartSharp size={22} />
                     Stats
+                  </div>
+                  <MdKeyboardArrowRight size={22} />
+                </a>
+                <a href="#" onClick={connectWallet}>
+                  <div className="options">
+                    <FaBitcoin size={22} />
+                    Connect Wallet
                   </div>
                   <MdKeyboardArrowRight size={22} />
                 </a>

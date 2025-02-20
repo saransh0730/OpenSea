@@ -3,10 +3,26 @@ import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import "./HeroSection.css";
 
 const sectionImages = [
-  { image: "./images/heroSection/img1.avif", title: "Murakami.Flowers Official", floor: "0.2 ETH" },
-  { image: "./images/heroSection/img2.avif", title: "Letters by Vinnie Hager", floor: "0.44 ETH" },
-  { image: "./images/heroSection/img3.avif", title: "When Two Stars Collide", floor: "N/A" },
-  { image: "./images/heroSection/img4.avif", title: "Doodles", floor: "3.84 ETH" }
+  {
+    image: "./images/heroSection/img1.avif",
+    title: "Murakami.Flowers Official",
+    floor: "0.2 ETH",
+  },
+  {
+    image: "./images/heroSection/img2.avif",
+    title: "Letters by Vinnie Hager",
+    floor: "0.44 ETH",
+  },
+  {
+    image: "./images/heroSection/img3.avif",
+    title: "When Two Stars Collide",
+    floor: "N/A",
+  },
+  {
+    image: "./images/heroSection/img4.avif",
+    title: "Doodles",
+    floor: "3.84 ETH",
+  },
 ];
 
 function HeroSection() {
@@ -25,7 +41,7 @@ function HeroSection() {
     <div className="hero-section-container">
       <div className="hero-background"></div>
       <div className="hero-section">
-      <div className="category-btn-container">
+        <div className="category-btn-container">
           <li>
             <a className="active-btn">All</a>
             <a>Art</a>
@@ -35,7 +51,7 @@ function HeroSection() {
             <a>Photography</a>
             <a>Music</a>
           </li>
-          </div>
+        </div>
         <div className="nft-slider-container">
           <button className="scroll-btn left" onClick={() => scroll("left")}>
             <MdKeyboardArrowLeft size={22} />

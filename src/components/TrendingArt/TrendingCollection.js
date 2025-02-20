@@ -45,10 +45,10 @@ const categoryData = [
 function TrendCollection() {
   return (
     <div className="trending-container">
-    <div className="headings">
-      <h2>Trending in Art</h2>
-    <ButtonComp text="View Category" />
-    </div>
+      <div className="headings">
+        <h2>Trending in Art</h2>
+        <ButtonComp text="View Category" />
+      </div>
       <div className="category-list">
         {categoryData.map((category, index) => (
           <Category

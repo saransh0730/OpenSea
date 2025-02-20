@@ -45,10 +45,10 @@ const categoryData = [
 function MusicComponent() {
   return (
     <div className="trending-music-container">
-    <div className="headings">
-      <h2>Trending in Music</h2>
-    <ButtonComp text="View Category" />
-    </div>
+      <div className="headings">
+        <h2>Trending in Music</h2>
+        <ButtonComp text="View Category" />
+      </div>
       <div className="category-list">
         {categoryData.map((category, index) => (
           <Category

@@ -3,7 +3,7 @@ import "./TrendingPfp.css";
 import Category from "../categories/Container";
 import ButtonComp from "../ButtonComponent/ButtonComp";
 
-const categoryData = [                                      
+const categoryData = [
   {
     image: "./images/pfp/p1.avif",
     name: "Lil Pudgys",
@@ -45,10 +45,10 @@ const categoryData = [
 function TrendingPfp() {
   return (
     <div className="trending-pfp-container">
-    <div className="headings">
-      <h2>Trending in PFPs</h2>
-    <ButtonComp text="View Category" />
-    </div>
+      <div className="headings">
+        <h2>Trending in PFPs</h2>
+        <ButtonComp text="View Category" />
+      </div>
       <div className="category-list">
         {categoryData.map((category, index) => (
           <Category

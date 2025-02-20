@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  background-color: rgba(18,18,18,1);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px; 
+}
+
+
+::-webkit-scrollbar-track {
+  background: rgba(66, 66, 66, 1); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(104, 104, 104, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,0 +1,28 @@
+.notable-container {
+    background-color: rgba(18,18,18,1);
+    padding: 2rem;
+}
+
+.heading {
+    text-align: left;
+    color: white;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 20px;    
+    overflow: auto;
+    padding-bottom: 10px; 
+}
+
+.category {
+    min-width: 15.5%; 
+    flex: 0 0 auto; 
+}
+
+@media (max-width: 767px) {
+    .notable-container {
+      padding: 1rem;
+    }
+  }

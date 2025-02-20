@@ -15,6 +15,7 @@ import { PiGraduationCapBold } from "react-icons/pi";
 import { MdHelpOutline } from "react-icons/md";
 import { LuHandHelping } from "react-icons/lu";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaBitcoin } from "react-icons/fa";
 import {
   FaTwitter,
   FaInstagram,
@@ -41,6 +42,31 @@ function NavbarComp() {
 
   const toggleSidebar = () => {
     setisMenuOpen(!isMenuOpen);
+  };
+
+
+  const connectWallet = async (e) => {
+    e.preventDefault(); 
+    
+    try {
+      if (window.ethereum) {
+        const accounts = await window.ethereum.request({
+          method: 'eth_requestAccounts'
+        }); 
+        console.log(accounts);
+      } else {
+        console.log("Please install MetaMask or another Web3 wallet");
+      }
+    } catch (err) {
+      if (err.code === 4001) {
+        console.log("Wallet connection rejected by user");
+      } else if (err.code === -32002) {
+        console.log("Wallet connection request already pending");
+      } else {
+        console.log("Wallet connection failed: " + err.message);
+      }
+      console.error("Connection error:", err);
+    }
   };
 
   return (
@@ -88,7 +114,11 @@ function NavbarComp() {
                 {showDropdown && (
                   <div className="profile-menu">
                     <a href="#">
-                      <FaRegUser size={22} /> Profile
+                      <FaRegUser size={21} /> Profile
+                    </a>
+                    <a href="#" onClick={connectWallet}>
+                      <FaBitcoin size={21} /> 
+                     Connect Wallet
                     </a>
                     <a href="#">
                       <IoEyeOutline size={22} /> Watchlist
@@ -140,7 +170,8 @@ function NavbarComp() {
             </div>
             <div className="phone-menu">
               <button>
-                <FaWallet />&nbsp; Login
+                <FaWallet />
+                &nbsp; Login
               </button>
               <button className="hamburger-menu">
                 <IoSearchSharp />

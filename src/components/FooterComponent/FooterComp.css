@@ -208,6 +208,9 @@
   }
   
   @media (max-width: 767px) {
+    .company-tnc {
+      flex-direction: column;
+    }
     .upper-footer {
         width: 100%;
         flex-direction: column;
